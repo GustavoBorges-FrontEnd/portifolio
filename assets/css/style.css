@@ -336,6 +336,10 @@ main {
   border-radius: 20px;
 }
 
+.avatar{
+  border-radius: 1rem;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -523,7 +527,10 @@ main {
 }
 
 .service-item {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
@@ -531,28 +538,12 @@ main {
   z-index: 1;
 }
 
-.service-item::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
+.service-icon-box{
+  align-self: center;
 }
 
-.service-icon-box { margin-bottom: 10px; }
-
-.service-icon-box img { margin: auto; }
-
-.service-content-box { text-align: center; }
-
-.service-item-title { margin-bottom: 7px; }
-
-.service-item-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-3);
-  line-height: 1.6;
+.service-content-box{
+  align-self: center;
 }
 
 
